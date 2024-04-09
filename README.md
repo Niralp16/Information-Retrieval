@@ -24,8 +24,10 @@ loading and preparation of the dataset extracted from the
 provided CSV file.
 
 Algorithm Steps:
+
 1)Load dataset: Read the knowledge graph from the provided CSV file, assuming the format includes nodes representing documents and edges representing relationships between
 documents.
+
 2)Calculate Jaccard Similarity: Define a function Jaccard
 similarity(query, document name) that calculates the Jaccard
 similarity coefficient between the user query and the name of
@@ -33,6 +35,7 @@ each document in the knowledge graph. Jaccard similarity is
 computed as the ratio of the size of the intersection of unique
 tokens between the query and document name to the size of
 their union.
+
 3)Retrieve Top Related Documents: Iterate over each node
 in the knowledge graph and calculate the Jaccard similarity
 score between the user query and the name of each document.
