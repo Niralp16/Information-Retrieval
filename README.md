@@ -18,12 +18,13 @@ and interpretability, thereby advancing the state-of-the-art in
 explainable information retrieval.
 
 Step by Step Implementation:
+
 The methodology employed in this code begins with the
 loading and preparation of the dataset extracted from the
 provided CSV file.
 
 Algorithm Steps:
-1)Load dataset: Read the knowledge graph from the provided CSV file, assuming the format includes nodes representing documents and edges representing relationships between
+1)Load dataset: Read the knowledge graph from the provided CSV file, assuming the format includes nodes representing documents and edges representing relationships between
 documents.
 2)Calculate Jaccard Similarity: Define a function Jaccard
 similarity(query, document name) that calculates the Jaccard
