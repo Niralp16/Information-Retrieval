@@ -6,7 +6,7 @@ thus fueling the need for explainable information retrieval
 performance, they often lack transparency in explaining why
 certain documents are retrieved as query results. This paper
 addresses this gap by proposing a comprehensive architecture
-that integrates knowledge graphs into the XIR framework. Leveraging the structured information stored in knowledge graphs,
+that integrates knowledge graphs into the XIR framework. Leveraging the structured information stored in knowledge graphs,
 our approach aims to enhance the explainability of IR systems
 at various stages of the retrieval process. Unlike existing XIR
 approaches that primarily focus on refining the retrieval model,
@@ -23,7 +23,7 @@ loading and preparation of the dataset extracted from the
 provided CSV file.
 
 Algorithm Steps:
-1)Load dataset : Read the knowledge graph from the provided CSV file, assuming the format includes nodes representing documents and edges representing relationships between
+1)Load dataset: Read the knowledge graph from the provided CSV file, assuming the format includes nodes representing documents and edges representing relationships between
 documents.
 2)Calculate Jaccard Similarity: Define a function Jaccard
 similarity(query, document name) that calculates the Jaccard
@@ -38,6 +38,6 @@ score between the user query and the name of each document.
 Store the document name, similarity score, and URL (if
 available) in a list of related documents. Sort the list of related
 documents based on the similarity score in descending order to
-obtain the top related documents. Return the top top n related
+obtain the top related documents. Return the top n related
 documents as the output.
 
